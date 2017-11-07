@@ -87,7 +87,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         print("didDrop")
     }
     
-    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+    func captureOutput(_ output: AVCaptureOutput, didOutputSampleBuffer sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         print("didOutput")
         if connection.videoOrientation != .portrait {
             connection.videoOrientation = .portrait
