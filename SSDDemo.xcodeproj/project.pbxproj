@@ -12,6 +12,9 @@
 		480C6CFA1FB16CD80009876E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480C6CF81FB16CD80009876E /* Main.storyboard */; };
 		480C6CFC1FB16CD80009876E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480C6CFB1FB16CD80009876E /* Assets.xcassets */; };
 		480C6CFF1FB16CD80009876E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480C6CFD1FB16CD80009876E /* LaunchScreen.storyboard */; };
+		480C6D071FB242CA0009876E /* SSDDrawLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C6D061FB242CA0009876E /* SSDDrawLayer.swift */; };
+		480C6D091FB262BF0009876E /* ImageRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C6D081FB262BF0009876E /* ImageRecognizer.swift */; };
+		480C6D0D1FB264E60009876E /* SSDData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C6D0C1FB264E60009876E /* SSDData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		480C6CFB1FB16CD80009876E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		480C6CFE1FB16CD80009876E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		480C6D001FB16CD80009876E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480C6D061FB242CA0009876E /* SSDDrawLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDDrawLayer.swift; sourceTree = "<group>"; };
+		480C6D081FB262BF0009876E /* ImageRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRecognizer.swift; sourceTree = "<group>"; };
+		480C6D0C1FB264E60009876E /* SSDData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				480C6CF41FB16CD80009876E /* AppDelegate.swift */,
+				480C6D0C1FB264E60009876E /* SSDData.swift */,
+				480C6D081FB262BF0009876E /* ImageRecognizer.swift */,
 				480C6CF61FB16CD80009876E /* ViewController.swift */,
+				480C6D061FB242CA0009876E /* SSDDrawLayer.swift */,
 				480C6CF81FB16CD80009876E /* Main.storyboard */,
 				480C6CFB1FB16CD80009876E /* Assets.xcassets */,
 				480C6CFD1FB16CD80009876E /* LaunchScreen.storyboard */,
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					480C6CF01FB16CD80009876E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7A6HFXUZXL;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +148,9 @@
 			files = (
 				480C6CF71FB16CD80009876E /* ViewController.swift in Sources */,
 				480C6CF51FB16CD80009876E /* AppDelegate.swift in Sources */,
+				480C6D071FB242CA0009876E /* SSDDrawLayer.swift in Sources */,
+				480C6D091FB262BF0009876E /* ImageRecognizer.swift in Sources */,
+				480C6D0D1FB264E60009876E /* SSDData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7A6HFXUZXL;
 				INFOPLIST_FILE = SSDDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paddlepaddle.SSDDemo;
@@ -274,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7A6HFXUZXL;
 				INFOPLIST_FILE = SSDDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paddlepaddle.SSDDemo;

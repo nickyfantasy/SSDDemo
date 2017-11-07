@@ -7,3 +7,24 @@
 //
 
 import Foundation
+
+protocol ImageRecognizerDelegate {
+    func imageRecognizedSuccess(_ result: SSDData)
+    func imageRecognizedError()
+}
+
+class ImageRecognizer {
+    
+    func startRecognizing() {
+        
+    }
+    
+    func stopRecognizing() {
+        
+    }
+    
+}
+
+
+
+
