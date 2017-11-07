@@ -1,0 +1,13 @@
+//
+//  SSDDrawLayer.swift
+//  SSDDemo
+//
+//  Created by Nicky Chan on 11/7/17.
+//  Copyright © 2017 PaddlePaddle. All rights reserved.
+//
+
+import UIKit
+
+class SSDDrawLayer: CAShapeLayer {
+
+}
