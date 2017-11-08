@@ -11,6 +11,19 @@ import UIKit
 class SSDDrawLayer: CAShapeLayer {
     var labelLayer = CATextLayer()
     
+    required override init() {
+        super.init()
+
+        labelLayer.fontSize = 18
+        labelLayer.contentsScale = UIScreen.main.scale
+        labelLayer.foregroundColor = UIColor.blue.cgColor
+        addSublayer(labelLayer)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func render(_ data: SSDData) {
         
         self.path = UIBezierPath(roundedRect: CGRect(x: data.x, y: data.y, width: data.width, height: data.height), cornerRadius: 10).cgPath
@@ -22,11 +35,5 @@ class SSDDrawLayer: CAShapeLayer {
         labelLayer.string = String.init(format: "%@: %@", data.label, String(data.accuracy))
         labelLayer.fontSize = 18
         labelLayer.frame = CGRect.init(x: data.x, y: data.y + data.height, width: 100, height: 20)
-        
-        labelLayer.contentsScale = UIScreen.main.scale
-        labelLayer.foregroundColor = UIColor.blue.cgColor
-        
-        self.addSublayer(labelLayer)
     }
-    
 }

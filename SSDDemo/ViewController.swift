@@ -78,8 +78,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             
             captureSession.startRunning()
         }
-        
-        
     }
     
     func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -127,21 +125,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
 
     func fakeData() -> Array<SSDData> {
-        let obj1 = SSDData()
-        obj1.x = 100
-        obj1.y = 100
-        obj1.width = 100
-        obj1.height = 100
-        obj1.accuracy = 0.3
-        obj1.label = "Car"
+        let obj1 = SSDData.init(with: "Car", accuracy: 0.2, xmin: 0.1, ymin: 0.1, xmax: 0.5, ymax: 0.5, rectSize: self.view.frame.size)
         
-        let obj2 = SSDData()
-        obj2.x = 200
-        obj2.y = 200
-        obj2.width = 100
-        obj2.height = 100
-        obj2.accuracy = 0.7
-        obj2.label = "Cow"
+        let obj2 = SSDData.init(with: "Cow", accuracy: 0.7, xmin: 0.1, ymin: 0.5, xmax: 0.9, ymax: 0.8, rectSize: self.view.frame.size)
         
         return [obj1, obj2]
     }
