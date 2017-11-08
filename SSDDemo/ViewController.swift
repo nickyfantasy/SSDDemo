@@ -46,18 +46,17 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }
         
         // setup preview
-            let previewContainer = self.view.layer
-            let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)!
-            previewLayer.frame = previewContainer.bounds
-            previewLayer.contentsGravity = kCAGravityResizeAspectFill
-            previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
-            previewContainer.insertSublayer(previewLayer, at: 0)
+        let previewContainer = self.view.layer
+        let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)!
+        previewLayer.frame = previewContainer.bounds
+        previewLayer.contentsGravity = kCAGravityResizeAspectFill
+        previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        previewContainer.insertSublayer(previewLayer, at: 0)
+        self.previewLayer = previewLayer
         
-            let layer = SSDDrawLayer()
-            layer.render(SSDData())
-            previewContainer.insertSublayer(layer, at: 1)
-        
-            self.previewLayer = previewLayer
+        let multiboxLayer = SSDMultiboxLayer()
+        multiboxLayer.displayBoxs(with: self.fakeData())
+        previewContainer.insertSublayer(multiboxLayer, at: 1)
         
         // setup video output
         do {
@@ -127,6 +126,24 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         // Dispose of any resources that can be recreated.
     }
 
-
+    func fakeData() -> Array<SSDData> {
+        let obj1 = SSDData()
+        obj1.x = 100
+        obj1.y = 100
+        obj1.width = 100
+        obj1.height = 100
+        obj1.accuracy = 0.3
+        obj1.label = "Car"
+        
+        let obj2 = SSDData()
+        obj2.x = 200
+        obj2.y = 200
+        obj2.width = 100
+        obj2.height = 100
+        obj2.accuracy = 0.7
+        obj2.label = "Cow"
+        
+        return [obj1, obj2]
+    }
 }
 

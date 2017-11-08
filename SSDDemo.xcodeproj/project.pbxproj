@@ -15,6 +15,7 @@
 		480C6D071FB242CA0009876E /* SSDDrawLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C6D061FB242CA0009876E /* SSDDrawLayer.swift */; };
 		480C6D091FB262BF0009876E /* ImageRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C6D081FB262BF0009876E /* ImageRecognizer.swift */; };
 		480C6D0D1FB264E60009876E /* SSDData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C6D0C1FB264E60009876E /* SSDData.swift */; };
+		D09B082B1FB280CD0014EF43 /* SSDMultiboxLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B082A1FB280CD0014EF43 /* SSDMultiboxLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		480C6D061FB242CA0009876E /* SSDDrawLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDDrawLayer.swift; sourceTree = "<group>"; };
 		480C6D081FB262BF0009876E /* ImageRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRecognizer.swift; sourceTree = "<group>"; };
 		480C6D0C1FB264E60009876E /* SSDData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDData.swift; sourceTree = "<group>"; };
+		D09B082A1FB280CD0014EF43 /* SSDMultiboxLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSDMultiboxLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				480C6CFB1FB16CD80009876E /* Assets.xcassets */,
 				480C6CFD1FB16CD80009876E /* LaunchScreen.storyboard */,
 				480C6D001FB16CD80009876E /* Info.plist */,
+				D09B082A1FB280CD0014EF43 /* SSDMultiboxLayer.swift */,
 			);
 			path = SSDDemo;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				480C6CF71FB16CD80009876E /* ViewController.swift in Sources */,
 				480C6CF51FB16CD80009876E /* AppDelegate.swift in Sources */,
+				D09B082B1FB280CD0014EF43 /* SSDMultiboxLayer.swift in Sources */,
 				480C6D071FB242CA0009876E /* SSDDrawLayer.swift in Sources */,
 				480C6D091FB262BF0009876E /* ImageRecognizer.swift in Sources */,
 				480C6D0D1FB264E60009876E /* SSDData.swift in Sources */,
@@ -316,6 +320,7 @@
 				480C6D051FB16CD80009876E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
